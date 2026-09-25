@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+}
+
+
+
+header {
+    height: 65px;
+    background: #252b47;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+    color: white;
+}
+
+.logo {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 55px;
+}
+
+nav {
+    display: flex;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.header-buttons {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.login {
+    color: white;
+    text-decoration: none;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.join {
+    background: #20a9e8;
+    color: white;
+    text-decoration: none;
+    padding: 9px 16px;
+    border-radius: 3px;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+
+
+.hero {
+    min-height: calc(100vh - 65px);
+    background: #252b47;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    width: 50%;
+    position: relative;
+    z-index: 3;
+}
+
+.welcome {
+    color: #20a9e8;
+    font-size: 9px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.description {
+    color: white;
+    font-size: 11px;
+    line-height: 1.5;
+    margin-bottom: 22px;
+}
+
+
+
+.hero-buttons {
+    display: flex;
+    gap: 7px;
+}
+
+.hero-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 27px;
+    padding: 0 18px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.quote {
+    background: #20a9e8;
+    color: white;
+}
+
+.learn {
+    border: 1px solid #20a9e8;
+    color: #20a9e8;
+}
+
+
+
+.hero-images {
+    width: 500px;
+    height: 350px;
+    position: relative;
+}
+
+
+
+.blue-shape {
+    position: absolute;
+    width: 53px;
+    height: 58px;
+    background: #35c4e8;
+    right: 1px;
+    top: 15px;
+    z-index: 1;
+}
+
+
+.teacher-image {
+    position: absolute;
+    width: 190px;
+    height: 215px;
+    object-fit: cover;
+    right: 8px;
+    top: 23px;
+    z-index: 2;
+}
+
+
+
+.student-image {
+    position: absolute;
+    width: 122px;
+    height: 105px;
+    object-fit: cover;
+    left: 120px;
+    bottom: 70px;
+    z-index: 4;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+

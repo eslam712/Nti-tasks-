@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #050505;
+    color: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+
+header {
+    width: 100%;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 2.5%;
+
+    position: relative;
+    z-index: 10;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 29px;
+    font-weight: 400;
+    letter-spacing: -2px;
+}
+
+
+.logo-shape {
+    width: 30px;
+    height: 11px;
+
+    background: #f0d2b0;
+
+    display: block;
+
+    border-radius: 100% 0 100% 0;
+
+    transform: rotate(35deg);
+}
+
+
+nav {
+    display: flex;
+    gap: 70px;
+
+    margin-left: 130px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    letter-spacing: 1px;
+}
+
+
+.app-store {
+    margin-left: auto;
+
+    width: 212px;
+    height: 52px;
+
+    background: #efd3b0;
+
+    color: #111;
+
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    border-radius: 4px;
+}
+
+
+.apple {
+    font-size: 27px;
+    color: #000;
+}
+
+
+.app-store div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.app-store small {
+    font-size: 9px;
+    margin-bottom: 2px;
+}
+
+
+.app-store strong {
+    font-size: 15px;
+}
+
+
+.hero {
+    min-height: calc(100vh - 75px);
+
+    position: relative;
+
+    display: flex;
+
+    padding: 80px 12% 0 12%;
+
+    overflow: hidden;
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+
+    width: 50%;
+}
+
+
+.hero h1 {
+    font-size: clamp(80px, 9vw, 145px);
+
+    font-weight: 300;
+
+    line-height: 0.77;
+
+    letter-spacing: -7px;
+
+    margin-top: 55px;
+}
+
+
+.signup {
+    margin-top: 55px;
+}
+
+
+.signup p {
+    font-size: 15px;
+
+    color: #eeeeee;
+
+    margin-bottom: 18px;
+}
+
+
+.form {
+    display: flex;
+
+    width: 500px;
+
+    border-bottom: 1px solid #555;
+
+    padding-bottom: 5px;
+}
+
+
+.form input {
+    width: 270px;
+
+    background: transparent;
+
+    border: none;
+    outline: none;
+
+    color: white;
+
+    font-size: 16px;
+
+    padding: 10px 0;
+}
+
+
+.form input::placeholder {
+    color: #333;
+}
+
+
+.form button {
+    width: 210px;
+    height: 52px;
+
+    background: #efd3b0;
+
+    color: #222;
+
+    border: none;
+
+    border-radius: 4px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+.hero-image {
+    position: absolute;
+
+    width: 58%;
+
+    height: 100%;
+
+    right: -2%;
+    top: 0;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+
+    max-height: 900px;
+
+    object-fit: contain;
+
+    object-position: center top;
+}
+
+
+footer {
+    position: fixed;
+
+    bottom: 25px;
+    left: 2.5%;
+
+    display: flex;
+
+    gap: 15px;
+
+    color: white;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    z-index: 10;
+}
+
+
+@media (max-width: 1000px) {
+
+    nav {
+        margin-left: 60px;
+        gap: 35px;
+    }
+
+    .app-store {
+        width: 170px;
+    }
+
+    .hero {
+        padding-left: 8%;
+    }
+
+    .hero h1 {
+        font-size: 90px;
+    }
+
+    .form {
+        width: 420px;
+    }
+
+    .hero-image {
+        width: 60%;
+        right: -10%;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    header {
+        height: auto;
+
+        padding: 20px 6%;
+
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    nav {
+        order: 3;
+
+        width: 100%;
+
+        margin: 25px 0 0;
+
+        justify-content: center;
+
+        gap: 30px;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+
+    .app-store {
+        width: 150px;
+        height: 45px;
+    }
+
+    .hero {
+        min-height: calc(100vh - 130px);
+
+        padding: 50px 7%;
+
+        display: block;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 75px;
+
+        letter-spacing: -4px;
+
+        margin-top: 30px;
+    }
+
+    .signup {
+        margin-top: 45px;
+    }
+
+    .form {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .form input {
+        width: 55%;
+    }
+
+    .form button {
+        width: 45%;
+    }
+
+    .hero-image {
+        position: relative;
+
+        width: 100%;
+        height: 500px;
+
+        right: auto;
+        top: auto;
+
+        margin-top: 30px;
+    }
+
+    .hero-image img {
+        width: 120%;
+        max-height: 550px;
+    }
+
+    footer {
+        position: relative;
+
+        margin: 20px 7% 25px;
+    }
+}
+
+
